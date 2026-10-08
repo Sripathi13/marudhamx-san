@@ -1,0 +1,244 @@
+{
+  "brand": {
+    "name": "MarudhamX",
+    "subtitle": "Perishable Produce Transport Planner",
+    "badge": "v2.0"
+  },
+  "nav": {
+    "plan": "Plan Shipment",
+    "history": "Shipment History",
+    "settings": "Settings",
+    "demo": "Demo (5,000 kg Tomatoes)"
+  },
+  "landing": {
+    "headline": "MarudhamX plans perishable produce transport along real road networks and calculates exact truck requirements.",
+    "subline": "Receive turnkey road routing, optimal truck allocations, and comprehensive transport and spoilage cost estimates in seconds.",
+    "badge": "Real Road Routing & Truck Split Optimization",
+    "ctaPlan": "Plan a Shipment",
+    "ctaDemo": "Run 5-Tonne Demo",
+    "features": {
+      "card1": {
+        "title": "Real Road Routing",
+        "description": "Computes distinct routes mapped to physical road networks, evaluating highway bypasses and toll corridors."
+      },
+      "card2": {
+        "title": "Exact Truck Allocations",
+        "description": "Calculates required truck counts and payload distribution based on vehicle capacity constraints."
+      },
+      "card3": {
+        "title": "Transport & Loss Estimates",
+        "description": "Provides itemized diesel, toll, and driver costs paired with exponential crop spoilage risk calculations."
+      }
+    }
+  },
+  "defaults": {
+    "originName": "Pollachi Farm Hub",
+    "originAddress": "Pollachi, Coimbatore District, Tamil Nadu"
+  },
+  "planner": {
+    "title": "Plan a Shipment",
+    "subtitle": "Specify shipment origin, destination market, crop, and load parameters.",
+    "fromLabel": "Pickup Location (From)",
+    "toLabel": "Destination Market (To)",
+    "useCurrentLocation": "Use My Current Location",
+    "pickOnMap": "Pick on Map",
+    "searchLocation": "Search village or city...",
+    "gpsAccuracy": "Accuracy: ±{{meters}}m",
+    "youAreHere": "You are here",
+    "pickupPoint": "Pickup point",
+    "confirmLocation": "Confirm Location",
+    "coordsLabel": "Coordinates",
+    "cropLabel": "Perishable Crop",
+    "totalQuantityLabel": "Total Quantity (kg)",
+    "truckCapacityLabel": "Truck Capacity (kg)",
+    "customCapacity": "Custom capacity...",
+    "presets": "Presets",
+    "departureTimeLabel": "Departure Time",
+    "calculateButton": "Calculate Routes & Trucks",
+    "calculatingButton": "Calculating real road routes...",
+    "truckSummary": "{{trucks}} truck(s) needed for {{totalKg}} kg:",
+    "truckRow": "Truck {{index}}: {{loadKg}} kg ({{utilization}}% capacity)",
+    "fullLabel": "100% full",
+    "partialLabel": "{{percent}}% partial",
+    "errors": {
+      "QUANTITY_INVALID": "Quantity must be greater than 0 kg.",
+      "CAPACITY_INVALID": "Truck capacity must be greater than 0 kg.",
+      "ORIGIN_REQUIRED": "Please specify a pickup location.",
+      "DEST_REQUIRED": "Please select a destination market.",
+      "GEO_DENIED": "Location permission was denied. Use Pick on Map or search below.",
+      "GEO_TIMEOUT": "Location request timed out. Use Pick on Map or search below.",
+      "GEO_UNAVAILABLE": "Current location is unavailable. Use Pick on Map or search below.",
+      "ROUTING_FAILED": "We could not find road routes. Check your connection and try again."
+    }
+  },
+  "results": {
+    "title": "Shipment Routing Results",
+    "truckAllocationTitle": "Truck Requirement Summary",
+    "truckSummaryFormat": "{{trucks}} trucks needed. {{fullText}}{{remainderText}}.",
+    "fullTrucksPart": "{{count}} full truck(s) at {{capacity}} kg each",
+    "remainderTrucksPart": " and 1 truck carrying {{load}} kg",
+    "cropInfo": "Crop: {{crop}} • Total Harvest: {{totalKg}} kg",
+    "recommendedBadge": "Recommended Route",
+    "estimatedLabel": "estimated",
+    "openInGoogleMaps": "Open in Google Maps",
+    "editParameters": "Edit Shipment Parameters",
+    "candidateRoutesTitle": "Candidate Routes Comparison",
+    "keyboardHelp": "Keyboard accessible • Click row to select",
+    "comparisonTable": {
+      "route": "Route",
+      "distance": "Distance",
+      "time": "Travel Time",
+      "trafficDelay": "Traffic Delay",
+      "dataSource": "Data Source",
+      "transportCost": "Transport Cost",
+      "spoilage": "Spoilage Risk",
+      "expectedLoss": "Expected Loss",
+      "totalCost": "Total Economic Cost",
+      "score": "Score"
+    },
+    "scoreLabel": "Score: {{score}}/100",
+    "trafficDelayLabel": "+{{mins}} mins",
+    "realRoadNetwork": "Real Road Network Geometry (OSRM)",
+    "realRoadNetworkSub": "Solid line is recommended route. Click dashed routes to inspect.",
+    "expectedSpoilageLoss": "Expected Spoilage Loss",
+    "transportCost": "Transport Cost",
+    "durationDistance": "Duration & Distance",
+    "totalEconomicCost": "Total Economic Cost",
+    "fuelWearTolls": "Fuel + Wear + Tolls",
+    "transportSpoilage": "Transport + Spoilage",
+    "whyThisRoute": "Why this route? (Score Contribution)",
+    "breakdown": {
+      "time": "Transit Speed",
+      "spoilage": "Spoilage Prevention",
+      "cost": "Transport Cost",
+      "traffic": "Traffic Flow"
+    },
+    "assumptions": {
+      "title": "Model Assumptions",
+      "notice": "All spoilage rates, ambient heat factors, and traffic multipliers are algorithmic demonstration assumptions.",
+      "decayParam": "Decay Parameter",
+      "decayParamFormat": "k = {{val}} / {{unit}}",
+      "fuelPrice": "Diesel Reference Rate",
+      "trafficFactor": "Traffic Congestion Factor",
+      "editLink": "Adjust these values in Settings"
+    },
+    "turnByTurn": "Turn-by-Turn Road Directions",
+    "stepsCount": "{{count}} road segments for {{route}}",
+    "tradeoff": {
+      "cheapest": "Route {{route}} is the most cost-effective path, achieving the lowest transport cost ({{cost}}) while keeping expected spoilage under {{spoilage}}%.",
+      "savings": "Route {{route}} costs {{extraCost}} more than the cheapest route but reduces expected loss by {{lossSaved}} and arrives {{timeSaved}} min earlier.",
+      "loss": "Route {{route}} saves {{lossSaved}} in produce spoilage, easily offsetting {{extraCost}} in fuel and toll differences.",
+      "overall": "Route {{route}} minimizes overall economic cost ({{cost}}) for {{crop}}."
+    }
+  },
+  "traffic": {
+    "speeds": {
+      "NORMAL": "Normal",
+      "SLOW": "Slow",
+      "TRAFFIC_JAM": "Heavy",
+      "UNKNOWN": "No data"
+    },
+    "legend": {
+      "title": "Traffic Legend",
+      "normal": "Normal flow (smooth)",
+      "slow": "Slow traffic (moderate)",
+      "heavy": "Traffic jam (heavy)",
+      "noData": "No live data (typical)",
+      "clickInspect": "Click line to inspect"
+    },
+    "sources": {
+      "google_live": "Live Google Traffic",
+      "osrm_estimated": "Estimated typical traffic"
+    },
+    "bannerEstimated": "Live traffic is not available. Travel time is estimated from typical traffic for the selected hour.",
+    "bannerLive": "Live traffic active via Google Routes API.",
+    "showLiveTrafficLayer": "Show live traffic layer"
+  },
+  "corridors": {
+    "corridorA": "NH-83 Direct Arterial",
+    "corridorB": "NH-544 Bypass & Expressway",
+    "corridorC": "SH-174 Rural Feeder",
+    "corridorPrefix": "Route {{letter}}: {{name}}"
+  },
+  "map": {
+    "osmAttribution": "© OpenStreetMap contributors",
+    "googleMaps": "Google Maps",
+    "locatingAddress": "Locating address...",
+    "selectPickupOnMap": "Select Farm Pickup Point on Map",
+    "selectMarketOnMap": "Select Market on Map",
+    "mapDragHelp": "Click anywhere or drag the marker to set coordinates with 6-decimal precision.",
+    "closePicker": "Close Picker",
+    "presets": "Presets",
+    "locating": "Locating..."
+  },
+  "presets": {
+    "p1000": "1,000 kg (Small Pickup)",
+    "p3000": "3,000 kg (Medium Canter)",
+    "p6000": "6,000 kg (6-Wheeler Eicher)",
+    "p10000": "10,000 kg (Heavy 10-Wheeler)"
+  },
+  "history": {
+    "title": "Shipment History",
+    "subtitle": "View previously calculated shipments, compare projections, and export data.",
+    "exportCsv": "Export to CSV",
+    "filterDate": "Filter by date",
+    "allDates": "All Dates",
+    "emptyTitle": "No shipments planned yet",
+    "emptyAction": "Plan your first shipment",
+    "table": {
+      "date": "Date & Time",
+      "crop": "Crop",
+      "quantity": "Quantity",
+      "trucks": "Trucks",
+      "origin": "Origin",
+      "destination": "Destination",
+      "route": "Selected Route",
+      "totalCost": "Total Cost"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure global calculation parameters, fuel rates, vehicle presets, and display units.",
+    "language": "Interface Language",
+    "fuelPrice": "Diesel Fuel Price (₹ per litre)",
+    "fuelEfficiency": "Fuel Efficiency (km per litre)",
+    "defaultCapacity": "Default Truck Capacity (kg)",
+    "trafficProfile": "Traffic Profile",
+    "trafficOffPeak": "Off-peak (Free flow)",
+    "trafficTypical": "Typical (Standard day flow)",
+    "trafficHeavy": "Heavy (Peak market dispatch windows)",
+    "units": "Distance Units",
+    "unitKm": "Kilometres (km)",
+    "unitMiles": "Miles (mi)",
+    "save": "Save Settings",
+    "saved": "Settings Saved",
+    "reset": "Reset to Defaults",
+    "trafficSectionTitle": "Traffic Data Service",
+    "trafficStatusLive": "Live Google Routes API traffic enabled",
+    "trafficStatusEstimated": "Estimated traffic mode (OSRM standard routing)",
+    "trafficDescLive": "Real-time road speeds and congestion color overlays are active for Tamil Nadu corridors.",
+    "trafficDescEstimated": "Per-segment live traffic requires a Google Routes API key. Travel duration uses time-of-day deterministic schedules.",
+    "operationalRatesTitle": "Transport & Operational Rates",
+    "cropBenchmarksTitle": "Wholesale Crop Benchmark Prices (₹ / kg)",
+    "cropBenchmarksDesc": "Modifies expected economic loss values across all candidate route evaluations."
+  },
+  "languages": {
+    "en": "English",
+    "ta": "தமிழ்",
+    "hi": "हिन्दी"
+  },
+  "units": {
+    "km": "km",
+    "kg": "kg",
+    "mi": "mi",
+    "hrs": "hrs",
+    "mins": "mins",
+    "percent": "%",
+    "rupees": "₹",
+    "meters": "m",
+    "litre": "L",
+    "perLitre": "₹/L",
+    "kmPerLitre": "km/L",
+    "mpg": "mpg"
+  }
+}

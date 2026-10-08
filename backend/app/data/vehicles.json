@@ -1,0 +1,43 @@
+{
+  "vehicles": [
+    {
+      "id": "open_truck",
+      "name": "Open Body Truck (Tata 407 / Canter)",
+      "capacity_kg": 3500,
+      "fuel_rate_per_km": 14.5,
+      "wear_per_km": 2.5,
+      "driver_hourly": 160,
+      "temp_factor": 1.0
+    },
+    {
+      "id": "closed_truck",
+      "name": "Closed Insulated Truck (Eicher 6-Wheeler)",
+      "capacity_kg": 7500,
+      "fuel_rate_per_km": 19.5,
+      "wear_per_km": 3.8,
+      "driver_hourly": 200,
+      "temp_factor": 0.7
+    },
+    {
+      "id": "reefer_truck",
+      "name": "Refrigerated Reefer Truck (Active Cooling +4°C)",
+      "capacity_kg": 15000,
+      "fuel_rate_per_km": 28.0,
+      "wear_per_km": 5.2,
+      "driver_hourly": 280,
+      "temp_factor": 0.3
+    }
+  ],
+  "tolls": {
+    "Kaniyur": 110,
+    "Vijayamangalam": 145,
+    "Vaiguntham": 130,
+    "Omalur": 115,
+    "Krishnagiri": 95,
+    "Pallikonda": 110,
+    "Chennasamudram": 85,
+    "Nemili": 90,
+    "Kodai Road Toll": 120
+  },
+  "default_fuel_price_inr": 94.5
+}

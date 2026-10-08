@@ -1,0 +1,58 @@
+{
+  "crops": [
+    {
+      "id": "tomato",
+      "name": "Tomato (Nattu / Hybrid)",
+      "category": "highly_perishable",
+      "base_rate": 0.035,
+      "default_price_inr_per_kg": 32,
+      "shelf_life_hours": 48,
+      "weights": { "time": 0.50, "spoilage": 0.30, "cost": 0.15, "traffic": 0.05 }
+    },
+    {
+      "id": "leafy_vegetables",
+      "name": "Leafy Vegetables (Spinach / Keerai)",
+      "category": "highly_perishable",
+      "base_rate": 0.058,
+      "default_price_inr_per_kg": 28,
+      "shelf_life_hours": 24,
+      "weights": { "time": 0.50, "spoilage": 0.30, "cost": 0.15, "traffic": 0.05 }
+    },
+    {
+      "id": "banana",
+      "name": "Banana (Nendran / Poovan)",
+      "category": "medium",
+      "base_rate": 0.022,
+      "default_price_inr_per_kg": 26,
+      "shelf_life_hours": 72,
+      "weights": { "time": 0.30, "spoilage": 0.20, "cost": 0.35, "traffic": 0.15 }
+    },
+    {
+      "id": "potato",
+      "name": "Potato (Hills / Plain)",
+      "category": "medium",
+      "base_rate": 0.005,
+      "default_price_inr_per_kg": 22,
+      "shelf_life_hours": 360,
+      "weights": { "time": 0.30, "spoilage": 0.20, "cost": 0.35, "traffic": 0.15 }
+    },
+    {
+      "id": "maize",
+      "name": "Maize / Corn",
+      "category": "medium",
+      "base_rate": 0.004,
+      "default_price_inr_per_kg": 21,
+      "shelf_life_hours": 400,
+      "weights": { "time": 0.30, "spoilage": 0.20, "cost": 0.35, "traffic": 0.15 }
+    },
+    {
+      "id": "rice",
+      "name": "Paddy / Rice (Ponni)",
+      "category": "low",
+      "base_rate": 0.0008,
+      "default_price_inr_per_kg": 44,
+      "shelf_life_hours": 1200,
+      "weights": { "time": 0.15, "spoilage": 0.05, "cost": 0.60, "traffic": 0.20 }
+    }
+  ]
+}

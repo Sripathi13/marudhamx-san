@@ -1,0 +1,49 @@
+{
+  "vehicles": [
+    {
+      "id": "open_truck",
+      "name": "Open Body Truck (Tata 407 / Canter)",
+      "name_ta": "திறந்த சரக்கு லாரி (டாடா 407)",
+      "capacity_kg": 3500,
+      "fuel_rate_per_km": 14.5,
+      "wear_per_km": 2.5,
+      "driver_hourly": 160,
+      "temp_factor": 1.0,
+      "description": "Standard tarpaulin covered truck. Zero cooling, high heat exposure during daylight."
+    },
+    {
+      "id": "closed_truck",
+      "name": "Closed Insulated Truck (Eicher 6-Wheeler)",
+      "name_ta": "மூடப்பட்ட இன்சுலேட்டட் லாரி",
+      "capacity_kg": 7500,
+      "fuel_rate_per_km": 19.5,
+      "wear_per_km": 3.8,
+      "driver_hourly": 200,
+      "temp_factor": 0.7,
+      "description": "Insulated hard-body container. Protects against wind, rain, and direct sun baking."
+    },
+    {
+      "id": "reefer_truck",
+      "name": "Refrigerated Reefer Truck (Active Cooling +4°C)",
+      "name_ta": "குளிர்பதன ரெப்ரிஜிரேட்டட் லாரி (+4°C)",
+      "capacity_kg": 15000,
+      "fuel_rate_per_km": 28.0,
+      "wear_per_km": 5.2,
+      "driver_hourly": 280,
+      "temp_factor": 0.3,
+      "description": "Active diesel refrigeration unit. Drastically cuts spoilage for high-value perishables."
+    }
+  ],
+  "tolls": {
+    "Kaniyur": 110,
+    "Vijayamangalam": 145,
+    "Vaiguntham": 130,
+    "Omalur": 115,
+    "Krishnagiri": 95,
+    "Pallikonda": 110,
+    "Chennasamudram": 85,
+    "Nemili": 90,
+    "Kodai Road Toll": 120
+  },
+  "default_fuel_price_inr": 94.5
+}

@@ -1,0 +1,54 @@
+{
+  "markets": [
+    {
+      "id": "mkt_cbe",
+      "name": "Coimbatore MGR Wholesale Vegetable Market",
+      "city": "Coimbatore",
+      "lat": 10.9982,
+      "lng": 76.9634,
+      "type": "terminal_wholesale",
+      "peak_auction_time": "04:00 - 08:30 AM",
+      "toll_names": ["Kaniyur"]
+    },
+    {
+      "id": "mkt_pollachi",
+      "name": "Pollachi Gandhi Daily Market",
+      "city": "Pollachi",
+      "lat": 10.6586,
+      "lng": 77.0087,
+      "type": "assembly_wholesale",
+      "peak_auction_time": "05:00 - 09:00 AM",
+      "toll_names": []
+    },
+    {
+      "id": "mkt_tiruppur",
+      "name": "Tiruppur Thennampalayam Market",
+      "city": "Tiruppur",
+      "lat": 11.1085,
+      "lng": 77.3411,
+      "type": "city_market",
+      "peak_auction_time": "04:30 - 08:00 AM",
+      "toll_names": ["Kaniyur"]
+    },
+    {
+      "id": "mkt_salem",
+      "name": "Salem Leigh Bazaar & Shevapet Market",
+      "city": "Salem",
+      "lat": 11.6643,
+      "lng": 78.1460,
+      "type": "central_hub",
+      "peak_auction_time": "05:00 - 09:30 AM",
+      "toll_names": ["Vijayamangalam", "Vaiguntham"]
+    },
+    {
+      "id": "mkt_chennai",
+      "name": "Chennai Koyambedu Wholesale Market Complex (KWMC)",
+      "city": "Chennai",
+      "lat": 13.0694,
+      "lng": 80.1948,
+      "type": "mega_terminal",
+      "peak_auction_time": "02:30 - 07:00 AM",
+      "toll_names": ["Vijayamangalam", "Vaiguntham", "Omalur", "Krishnagiri", "Pallikonda", "Chennasamudram", "Nemili"]
+    }
+  ]
+}
